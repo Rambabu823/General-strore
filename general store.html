@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Homepage</title>
+    <style>
+        header{
+        width: 100%;
+        height: 250px; 
+        float: center;
+        box-sizing: border-box;
+        padding: 6px;
+        background-color:yellow;
+        text-align: center;
+             }
+             #brand{
+               font-size: 3rem;
+             }
+
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #brand{
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+            font-family: century gothic;
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color:red;
+            float: left;
+            box-sizing: border-box;
+            padding: 20px;
+
+        }
+        #search{
+            width: 200px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            font-size: 15px;
+            padding: 10px;
+
+        }
+        #search-btn{
+            width: 200px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            margin-left: 3px;
+            font-size: 16px;
+        }
+        #menu_table{
+            width: 600px;
+            height: 40px;
+            float: right;
+            box-sizing: border-box;
+        }
+        #menu_item{
+            background-color: white;
+            width: 20%;
+            text-align: center;
+                 }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+        section{
+            width: 100%;
+            height: 1650px;
+            float: left;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: blue;
+            padding: 30px;
+        }
+
+        #venue{
+            float: left;
+        }
+
+        #phone{
+            float: right;
+        }
+
+        #popular-sweets-box{
+            width: 720px;
+            height: 550px;
+            float: left;
+            box-sizing: border-box;
+            background-color: pink;
+            margin-top:30px;
+            padding: 18px;
+        }
+
+        #popular-sweets-title{
+            color: red;
+            text-align:center;
+            font-size: 30px;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #Popular-Sweets-img{
+            width: 300px;
+            height: 200px;
+            margin: 15px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: green;
+            box-sizing: border-box;
+            
+            
+         }
+
+         #rate_list_box{
+            width: 400px;
+            height: 550px;
+            float: right;
+            box-sizing: border-box;
+            margin-top:  30px;
+         }
+
+         #rate_header{
+            height: 50px;
+            background-color: pink;
+            color: red;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 25px;
+         }
+
+         #rate_content{
+            background-color: pink;
+         }
+
+         #s_name{
+            color:red;
+            font-family:sans-serif;
+            font-size:22px;
+            padding: 10px;
+            border-bottom-width:2px;
+            border-bottom-style:solid;
+            background-color:pink;
+         }
+
+         #rate{
+            list-style: none;
+         }
+
+         fieldset{
+            width: 690px;
+            height: 550px;
+            float: left;
+            margin-top:50px;
+            border-width:1px;
+            border-style: solid;
+            border-color: #ccc;
+            padding: 10px;
+            background-color:papayawhip;
+         }
+         
+         legend{
+            font-family: century gothic;
+            font-size: 30px;
+            font-weight: bold;
+         }
+
+         #Order_Online{
+            font-size: 17pxpx;
+            font-family: sans-serif;
+         }
+
+
+         #Order_input{
+            width: 100%;
+            height: 35px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            margin-top: 8px;
+         }
+
+         textarea{
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+         }
+
+         #submit_btm{
+            padding: 10px;
+            font-size: 15px;
+            float: right;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            background-color:oldlace;
+         }
+
+         #abt_us{
+            width: 450px;
+            height: 550px;
+            float: right;
+            border-width: 1px;
+            border-style: solid;
+            border-color:#ccc;
+            margin-top: 66px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color:greenyellow;
+         }
+
+         #abt-title{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+            background-color: yellow;
+         }
+
+         #abt_text{
+            text-align: justify;
+            font-family: sans-serif;
+            line-height: 28px;
+         }
+         
+         #Item{
+            float: left;
+            width: 100%;
+            box-sizing: border-box;
+         }
+
+         #more_sweets{
+            text-align: center;
+            font-family: sans-serif;
+         }
+
+         #sweets{
+            width: 218px;
+            height: 250px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            float: left;
+            margin-right: 46px;
+            margin-bottom: 30px;
+         }
+
+         #sweets_and{
+            width: 218px;
+            height: 250px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            float: left;
+         }
+
+         #sweet_pic{
+            width: 180px;
+            height: 150px;
+            margin: 19px;
+         }
+
+         #buy_btn{
+            padding: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            width: 100px;
+            background-color: greenyellow;
+         }
+
+         footer{
+            width: 100%;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            background-color: black;
+         }
+
+         #contact_us{
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            padding: 10px;
+            padding-left: 30px;
+         }
+
+         #social_link{
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: right;
+           
+         }
+
+         #contact_title{
+            color: white;
+            font-family:sans-serif;
+         }
+
+         #contact_details{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-style:normal;
+            margin-bottom: 10px;
+
+         }
+         #social_logo{
+            width: 60px;
+         }
+#social_link i{
+    z-index: 10;
+    width: 20px;
+    height: 30px;
+    color: white;
+    font-size: 50px;
+    margin:25px;    
+}
+
+   #developer{
+      float: left;
+      color: white;
+      font-family: sans-serif;
+      margin-top: 200px;
+      margin-left: 120px;
+   }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <b>
+        <h1 id="brand">PRASAD ATTA AND GENERAL STORE or CAKE SHOP</h1>
+        <p id="tag-line">SUPERIOR ATTA  0% MAIDA 100% ATTA</p>
+        <h1>Pro. : Real Rambabu</h1>
+        </b>
+       
+
+    </header>
+    <nav>
+        <form>
+            <input type="search" name="search" placeholder="search your Item hear" id="search">
+            <input type="submit" id="search-btn">
+        </form>
+        <table id="menu_table">
+            <tr>
+                <td id="menu_item"><a href="generalstore and chek shope.html">Home</a></td>
+                <td id="menu_item"><a href="general store.html">Item</a></td>
+                <td id="menu_item"><a href="#">Bekeries</a></td>
+                <td id="menu_item"><a href="#abt_us"> About us</a></td>
+                <td id="menu_item"><a href="#contact_us"> contact us</a></td>
+
+            </tr>
+        </table>
+
+    </nav>
+    <section>
+       
+       <div id="Item">
+        <h1 id="more_sweets">Our Item</h1>
+
+    </div>    
+    <div id="sweets"> <img src="photo/aa.webp" id="sweet_pic">
+    <center>
+    <a href="sweetshop11.html.html#frm_box"><button id="buy_btn">Buy Now</button>
+    </center>
+    
+
+
+    </div>
+    <div id="sweets"> <img src="photo/bb.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button> 
+    </center>
+    
+
+
+    </div>
+    <div id="sweets"> <img src="photo/cc.webp" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/dd.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets_and"> <img src="photo/ee.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+     </center>
+    </div>
+	
+	<div id="sweets"> <img src="photo/ff.jfif" id="sweet_pic">
+    <center>
+    <button id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/gg.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button> 
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/hh.avif" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/ii.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets_and"> <img src="photo/jj.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+     </center>
+    </div>
+	
+	<div id="sweets"> <img src="photo/kk.png" id="sweet_pic">
+    <center>
+    <button id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/ll.avif" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button> 
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/mm.webp" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/nn.jfif" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets_and"> <img src="photo/oo.webp" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+     </center>
+    </div>
+	<div id="sweets"> <img src="photo/pp.webp" id="sweet_pic">
+    <center>
+    <button id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/qq.jfif" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button> 
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/rr.webp" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/ss.jfif" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets_and"> <img src="photo/tt.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+     </center>
+    </div>
+	<div id="sweets"> <img src="photo/uu.webp" id="sweet_pic">
+    <center>
+    <button id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/vv.webp" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button> 
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/ww.webp" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets"> <img src="photo/xx.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="sweets_and"> <img src="photo/yy.jpg" id="sweet_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+  
+      </div>
+
+    </section>
+
+    <footer>
+   <div id="contact_us">
+    <h1 id="contact_title">contact_us</h1>
+
+    <address id="contact_details">Website :sweetshop.com</address>
+    <address id="contact_details">Phone Number : +91 7492075290</address>
+    <address id="contact_details">Address : East champaran ,BIHAR</address>
+    <address id="contact_details">Email ID : itsmerambabu.it@gamil.com</address>
+
+
+   </div>
+
+   <div id="developer">Developed By  :  Real Rambabu</div>
+
+
+   <div id="social_link">
+   <h1 id="contact_title">Follow Us</h1>
+
+   <a href="https://www.facebook.com/real.rambabu" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a href="https://x.com/real_rambabau?t=" target="_blank">
+    <i class="fa-brands fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/real__rambabu__/" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/rambabu-kumar-400b2926b/"_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://www.youtube.com/@realrambabu.74920" target="_blank">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+</div>
+ 
+    </footer>
+    
+</body>
+</html>
