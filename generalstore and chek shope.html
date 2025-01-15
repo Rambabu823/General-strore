@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Real Rambabu</title>
+    <style>
+        header{
+        width: 100%;
+        height: 200px; 
+        float: center;
+        box-sizing: border-box;
+        padding: 6px;
+        background-color:gray;
+        text-align: center;
+             }
+
+             #brand{
+               font-size: 3rem;
+             }
+
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        #brand{
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+            font-family: century gothic;
+        }
+
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color:black;
+            float: left;
+            box-sizing: border-box;
+            padding: 20px;
+
+        }
+        #search{
+            width: 200px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            font-size: 15px;
+            padding: 10px;
+
+        }
+        #search-btn{
+            width: 200px;
+            height: 40px;
+            float: left;
+            box-sizing: border-box;
+            border: none;
+            margin-left: 3px;
+            font-size: 16px;
+        }
+
+        #menu_table{
+            width: 600px;
+            height: 40px;
+            float: right;
+            box-sizing: border-box;
+        }
+        
+        #menu_item{
+            background-color: white;
+            width: 20%;
+            text-align: center;
+                 }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+        }
+        section{
+            width: 100%;
+            height: 1650px;
+            float: left;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: greenyellow;
+            padding: 30px;
+        }
+
+        #venue{
+            float: left;
+        }
+
+        #phone{
+            float: right;
+        }
+
+        #popular-item{
+            width: 720px;
+            height: 550px;
+            float: left;
+            box-sizing: border-box;
+            background-color:greenyellow;
+            margin-top:30px;
+            padding: 18px;
+        }
+
+        #popular-item_a{
+            color: black;
+            text-align:center;
+            font-size: 30px;
+            font-family: sans-serif;
+            margin:0;
+            padding: 0;
+         }
+
+         #Popular-img{
+            width: 650px;
+            height: 450px;
+            margin: 15px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: green;
+            box-sizing: border-box;    
+         }
+
+
+         #rate_list_box{
+            width: 400px;
+            height: 550px;
+            float: right;
+            box-sizing: border-box;
+            margin-top:  30px;
+         }
+
+         #rate_header{
+            height: 50px;
+            background-color:burlywood;
+            color: black;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 25px;
+         }
+
+         #rate_content{
+            background-color: grey;
+         }
+
+         #s_name{
+            color:black;
+            font-family:sans-serif;
+            font-size:22px;
+            padding: 10px;
+            border-bottom-width:2px;
+            border-bottom-style:solid;
+            background-color:grey;
+         }
+
+         #rate{
+            list-style: none;
+         }
+
+         fieldset{
+            width: 690px;
+            height: 550px;
+            float: left;
+            margin-top:50px;
+            border-width:1px;
+            border-style: solid;
+            border-color: #ccc;
+            padding: 10px;
+            background-color:aquamarine;
+         }
+         
+         legend{
+            font-family: century gothic;
+            font-size: 30px;
+            font-weight: bold;
+         }
+
+         #Order_Online{
+            font-size: 17pxpx;
+            font-family: sans-serif;
+         }
+
+
+         #Order_input{
+            width: 100%;
+            height: 35px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            margin-top: 8px;
+         }
+
+         textarea{
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+         }
+
+         #submit_btm{
+            padding: 10px;
+            font-size: 15px;
+            float: right;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            background-color:oldlace;
+         }
+
+         #abt_us{
+            width: 450px;
+            height: 550px;
+            float: right;
+            border-width: 1px;
+            border-style: solid;
+            border-color:#ccc;
+            margin-top: 66px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color:rgb(145, 156, 130);
+         }
+
+         #abt-title{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+            background-color: yellow;
+         }
+
+         #abt_text{
+            text-align: justify;
+            font-family: sans-serif;
+            line-height: 28px;
+         }
+         
+         #m_item{
+            float: left;
+            width: 100%;
+            box-sizing: border-box;
+         }
+
+         #more_item{
+            text-align: center;
+            font-family: sans-serif;
+         }
+
+         #item{
+            width: 215px;
+            height: 250px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            float: left;
+            margin-right: 46px;
+            margin: bottom 30px;
+         }
+
+         #item_and{
+            width: 215px;
+            height: 250px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            float: left;
+         }
+
+         #item_pic{
+            width: 180px;
+            height: 150px;
+            margin: 19px;
+         }
+
+         #buy_btn{
+            padding: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            width: 100px;
+            background-color: greenyellow;
+         }
+
+         footer{
+            width: 100%;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            background-color: black;
+         }
+
+         #contact_us{
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: left;
+            padding: 10px;
+            padding-left: 30px;
+         }
+
+         #social_link{
+            width: 400px;
+            height: 250px;
+            box-sizing: border-box;
+            float: right;
+           
+         }
+
+         #contact_title{
+            color: white;
+            font-family:sans-serif;
+         }
+
+         #contact_details{
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-style:normal;
+            margin-bottom: 10px;
+
+         }
+         #social_logo{
+            width: 60px;
+         }
+#social_link i{
+    z-index: 10;
+    width: 20px;
+    height: 30px;
+    color: white;
+    font-size: 50px;
+    margin:25px;    
+}
+
+   #developer{
+      float: left;
+      color: white;
+      font-family: sans-serif;
+      margin-top: 200px;
+      margin-left: 120px;
+   }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <b>
+        <h1 id="brand">MAHINDRA </h1>
+        <p id="tag-line">SUPPER </p>
+        <h1 >Pro. : Anand Mahindra</h1>
+        </b>
+
+    </header>
+    <nav>
+        <form>
+            <input type="search" name="search" placeholder="search your Item hear" id="search">
+            <input type="submit" id="search-btn">
+        </form>
+        <table id="menu_table">
+            <tr>
+                <td id="menu_item"><a href="generalstore and chek shope.html">Home</a></td>
+                <td id="menu_item"><a href="general store.html">letest</a></td>
+                <td id="menu_item"><a href="#">Old Model</a></td>
+                <td id="menu_item"><a href="#abt_us">Abous us</a></td>
+                <td id="menu_item"><a href="#contact_us"> contact us</a></td>
+
+            </tr>
+        </table>
+
+    </nav>
+    <section>
+        <address id="Venue">
+        <h1> Venue : champaran Bihar - 845411</h1>
+
+        </address>
+        <address id="phone">
+           <h1> Order online : +91 7492075290, 8227952241,</h1>
+        </address>
+
+        <div id="popular-item">
+         <h1 id="popular-item_a">Letest Model</h1>
+
+
+         <img src="photo/thar.webp" alt="A"  id="Popular-img"/>
+        
+     </div>
+
+        <table id="rate_list_box">
+            <tr>
+                <td id="rate_header"> Model Name</td>
+                <td id="rate_header"> Price</td>
+            </tr>
+
+            <tr>
+                 <td id="rate_content">
+                 <ol>
+                    <li id="s_name">Thar Rox</li>
+                    <li id="s_name">Scorpio</li>
+                    <li id="s_name">Xuv</li>
+                    <li id="s_name">Maruti</li>
+                    <li id="s_name">Auto</li>
+                    <li id="s_name">Tractor</li>
+                    <li id="s_name">Pickup</li>
+                    <li id="s_name">Swift</li>
+                    <li id="s_name">other Model</li>
+                 </ol>
+                 </td>
+                 <td id="rate_content">
+
+                    <ol id="rate">
+                        <li id="s_name">__ /kg</li>
+                        <li id="s_name">__ /kg</li>
+                        <li id="s_name">__ /kg</li>
+                        <li id="s_name">__ /kg</li>
+                        <li id="s_name">__ /kg</li>
+                        <li id="s_name">__ /p</li>
+                        <li id="s_name">__ /kg</li>
+                        <li id="s_name">__ /kg</li>
+                        <li id="s_name">__ /kg</li>
+                    </ol>
+                 </td>
+            </tr>
+        </table>
+
+        <fieldset id="frm_box">
+         <legend>Order online</legend>
+
+         <form id="Order_Onlne">
+            Buyer Name<br>
+            <input type="text" name="name" id="Order_input"><br><br>
+            Mobile Number<br>
+            <input type="number" name="Mobile"id="Order_input" ><br><br>
+
+            choose Sweets<br>
+            <select name="choose_item"id="Order_input">
+
+                <option value="atta">atta</option>
+                <option value="masala">masala</option>
+                <option value="oil">oil</option>
+                <option value="kek">kek</option>
+                <option value="Milk">Milk</option>
+                <option value="other-item"></other-item></option>
+
+            </select>
+
+            <br><br>
+            Quantity<br>
+            <input type="text" name="Quantity" id="Order_input">
+            <br><br>
+
+            Address<br>
+                <textarea name="address"></textarea>
+                <br><br>
+
+                <input type="submit" value="Order Now!" id="submit_btm">
+
+         </form>
+        </fieldset>
+
+        <div id="abt_us">
+           <h1 align="center" id="abt-title">About Us</h1>
+           <hr>
+           <p id="abt_text">
+            Atta, or wheat flour, has many health benefits, including: 
+Digestion
+Atta can help improve digestion and metabolism,
+ even for those with sensitive stomachs. 
+ Multigrain atta is rich in dietary fiber,
+ which can act as a natural laxative and help prevent constipation. 
+Protein
+Protein-rich atta can help you meet your daily protein
+ requirements and keep your body strong and healthy. 
+Skin health
+Atta contains zinc, which can help nourish and repair skin,
+ and antioxidants like selenium, which can keep skin radiant and wrinkle-free. 
+PMS symptoms
+Whole wheat atta contains vitamin B, which can help ease PMS
+ symptoms, and magnesium, which can help relieve anxiety and pain. 
+Diabetic friendly
+Some say that eating chapaties made with certain
+ types of atta can help control blood sugar levels. 
+Energy
+
+           </p>
+        </div>
+
+       <div id="m_item">
+        <h1 id="more_item">Our Item</h1>
+
+    </div>    
+    <div id="item"> <img src="photo/car.jpg" id="item_pic">
+    <center>
+    <a href="sweetshop11.html.html#frm_box"><button id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="item"> <img src="photo/car1.jpg" id="item_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button> 
+    </center>
+
+    </div>
+    <div id="item"> <img src="photo/car2.webp" id="item_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="item"> <img src="photo/cart.jpg" id="item_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+    </center>
+
+    </div>
+    <div id="item_and"> <img src="photo/cartt.jpg" id="item_pic">
+    <center>
+    <button  id="buy_btn">Buy Now</button>
+     </center>
+    </div>
+
+    </section>
+
+    <footer>
+   <div id="contact_us">
+    <h1 id="contact_title">contact_us</h1>
+
+    <address id="contact_details">Website :PRASAD ATTA AND GENERAL STORE or CAKE SHOP</address>
+    <address id="contact_details">Phone Number : +91 7492075290</address>
+    <address id="contact_details">Address : East champaran,Bihar 845411</address>
+    <address id="contact_details">Email ID : itsmerambabu.it@gamil.com</address>
+
+
+   </div>
+
+   <div id="developer">Developed By  :  Real Rambabu</div>
+
+
+   <div id="social_link">
+   <h1 id="contact_title">Follow Us</h1>
+
+   <a href="https://www.facebook.com/real.rambabu" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a href="https://x.com/real_rambabau?t=" target="_blank">
+    <i class="fa-brands fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/real__rambabu__/" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/rambabu-kumar-400b2926b/"target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://www.youtube.com/@realrambabu.74920" target="_blank">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+  </div>
+ 
+    </footer>
+    
+</body>
+</html>
